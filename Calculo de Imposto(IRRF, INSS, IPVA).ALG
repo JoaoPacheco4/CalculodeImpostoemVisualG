@@ -1,11 +1,11 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 13/03/2024
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 INSS: real
 IRRF:real
 IPVA:real
@@ -17,13 +17,13 @@ vdc: real
 porc: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-ESCREVAL("Qual o seu salário?")
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+ESCREVAL("Qual o seu salÃ¡rio?")
 leia(salario)
-ESCREVAL("Você possui um veículo? Se sim, digite 1, se não, digite 2")
+ESCREVAL("VocÃª possui um veÃ­culo? Se sim, digite 1, se nÃ£o, digite 2")
 leia(SN)
 se(SN=1) entao
-ESCREVAL("Digite 1 se ele for flex, 2 se for um gnv, 3 se for uma moto e 4 se for elétrico")
+ESCREVAL("Digite 1 se ele for flex, 2 se for um gnv, 3 se for uma moto e 4 se for elÃ©trico")
 LEIA(SN)
 se(SN=1) entao
 porc <- 0.04
@@ -37,9 +37,9 @@ FIMSE
 se(SN=4) entao
 porc <- 0.005
 FIMSE
-ESCREVAL("Quantos anos você possui esse carro?")
+ESCREVAL("Quantos anos vocÃª possui esse carro?")
 LEIA(idc)
-se(idc<20) entao
+se(idc<=20) entao
 ESCREVAL("Qual foi o valor do carro?")
 LEIA(vdc)
 IPVA <- vdc * porc
@@ -78,6 +78,6 @@ FIMSE
 FIMSE
 FIMSE
 salario_real<- salario * (1 - INSS) - IRRF - IPVA
-ESCREVAL("Então, você recebe ", salario_real)
+ESCREVAL("EntÃ£o, vocÃª recebe ", salario_real)
 
 Fimalgoritmo
